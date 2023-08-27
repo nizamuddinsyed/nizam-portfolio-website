@@ -236,5 +236,11 @@ function navHighlighter()
     })
 }
 
+// Form submit EMAIL RESPONSE
+var encodedEmail = 'aWFtc3llZC4wNUBnbWFpbC5jb20='
+var userEmail = atob(encodedEmail);
+var form = document.getElementById("contact-form");
+form.action = "https://formsubmit.co/" + userEmail;
+
 /*=============== SHOW SCROLL UP ===============*/
 
