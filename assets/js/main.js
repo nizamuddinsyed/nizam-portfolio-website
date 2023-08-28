@@ -159,7 +159,7 @@ modalCloses.forEach((modalClose) => {
 /*=============== SWIPER TESTIMONIAL ===============*/
 
 let swiper = new Swiper('.testimonials_container', {
-    // spaceBetween: 24,
+    // spaceBetween: 24,    
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
