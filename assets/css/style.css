@@ -905,6 +905,8 @@ li {
     display: flex;
     flex-wrap: wrap;
     gap: 2.5em;
+    padding-top: 5em;
+    padding-bottom: 3em;
   }
   
   .card {
@@ -1305,10 +1307,6 @@ textarea.input {
     opacity: 1;
 }
 /*=============== FOOTER ===============*/
-/* .footer {
-    padding-top: 20rem;
-
-} */
 
 .footer {
     padding-top: 10rem;
