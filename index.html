@@ -58,7 +58,7 @@
                 </div>
             </div>
             <div class="btn_share">
-                <i class="uil uil-share-alt social-share"></i>
+                <i class="uil uil-shield-check social-share"></i>
             </div>
 
             <div class="nav_close" id="nav-close">
@@ -95,20 +95,18 @@
                         <span class="typed-text"></span>
                         <span class="cursor">&nbsp</span>
                     </h1>
-
-                    <p class="home_description"><q><i>Data is my art, models are my medium, insights are my masterpieces.</i></q> - Hire Me!</p>
-                    <a href="#about" class="button">
-                        <i class="uil uil-user button_icon"></i>
-                        More About Me
-                    </a>
-                    <!-- Space Between two buttons -->
-                    <div class="space"></div>
-                    <!-- ADDED CV BUTTON -->
-                    <a href="https://drive.google.com/uc?export=download&id=1biOD_M6rJPDfhDgHaww5ckgr54eeslm6" class="button" download>
-                        <i class="uil uil-file-download cv_button_icon"></i>
-                        Download CV
-                    </a>
-                    
+                    <p class="home_description"><q><i>Data is my art, models are my medium, insights are my masterpieces.</i></p>
+                        <!-- buttons container |About Me| and |Download CV| -->
+                    <div class="button_container">
+                        <a href="#about" class="about_button">
+                            <i class="uil uil-user button_icon"></i>
+                            More About Me
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1biOD_M6rJPDfhDgHaww5ckgr54eeslm6" class="cv_button">
+                            <i class="uil uil-file-download button_icon"></i>
+                            Download CV
+                        </a>
+                    </div>
 
                 <div class="my_info">
                     <!-- Telegram -->
@@ -141,8 +139,6 @@
                             </div>
                         </a>
                     </div>
-
-
                 </div>
             </div>
         </section>
@@ -175,19 +171,13 @@
                         <div class="about_box">
                             <i class="uil uil-headphones about_icon"></i>
                             <h3 class="about_title">AI</h3>
-                            <span class="abouit_subtitle">community</span>
+                            <span class="abouit_subtitle">Support</span>
                         </div>
                     </div>
-                    <a href="#contact" class="button">
+                    
+                    <a href="#contact" class="about_contact_button">
                         <i class="uil uil-navigator button_icon"></i>
                         Contact Me
-                    </a>
-                    <!-- Space Between two buttons -->
-                    <div class="space"></div>
-                    <!-- ADDED CV BUTTON -->
-                    <a href="https://drive.google.com/uc?export=download&id=1biOD_M6rJPDfhDgHaww5ckgr54eeslm6" class="button" download>
-                        <i class="uil uil-file-download cv_button_icon"></i>
-                        Download CV
                     </a>
                 </div>
             </div>
@@ -725,39 +715,39 @@
         <!-- <div class="main__cards cards"> -->
             <div class="services_container container grid">
             <div class="cards__inner">
-                <div class="cards__card card">
-                    <h2 class="card__heading">FREE Consultation</h2>
-                    <h2 class="card__price">€ FREE</h2>
-                    <ul class="card__bullets flow" role="list">
-                        <li><span class="card_icon">🚀</span>Product Visioning</li>
-                        <li><span class="card_icon">🛠️</span>Tech Stack Guidance</li>
-                        <li><span class="card_icon">💰</span>Cost Forecasting</li>
-                        <li><span class="card_icon">🔄</span>Agile 101</li>
-
+                <!-- Free Consultation -->
+                  <div class="cards__card card">
+                    <h2 class="card__heading">FREE (COMMUNITY)</h2>
+                    <p class="card__price">€ 0.00</p>
+                    <ul role="list" class="card__bullets flow">
+                      <li>Product Visioning<span class="card_icon">🚀</span></li>
+                      <li>Brain Storming<span class="card_icon">🌀</span></li>
+                      <li>Tech Stack<span class="card_icon">🛠️</span></li>
+                      <li>Cost Forecasting<span class="card_icon">💰</span></li>
+                      <li>Agile 101<span class="card_icon">🔄</span></li>
                     </ul>
-                    <!-- <a class="card__cta cta" href="#basic">BOOK NOW</a> -->
-                    <form action="https://cal.com/nizamsyed/free-consultation" method="get" target="_blank">
-                        <button class="glow-on-hover" type="submit">BOOK NOW</button>
-                    </form>
-                </div>
-                <div class="cards__card card">
-                    <h2 class="card__heading">Full Stack AI App development</h2>
-                    <h2 class="card__price">From € 999</h2>
-                    <ul class="card__bullets flow" role="list">
-                        <li><span class="card_icon">🚀</span>Supercharge Your Project with Tailored AI Solutions</li>
-                        <li><span class="card_icon">🌐</span>Elevate User Experience Across All Platforms</li>
-                        <li><span class="card_icon">🔒</span>Fortify Your System with Top-Notch Security</li>
-                        <li><span class="card_icon">📈</span>Unlock Explosive Growth with Data Insights</li>
-
+                    <a href="https://cal.com/nizamsyed/free-consultation" class="card__cta cta" target="_blank">BOOK NOW</a>
+                  </div>
+            
+                  <!-- Paid Consultation -->
+                  <div class="cards__card card">
+                    <h2 class="card__heading">KICKSTART</h2>
+                    <p class="card__price">€ 999</p>
+                    <ul role="list" class="card__bullets flow">
+                      <li>Tailored AI Solution<span class="card_icon">🚀</span></li>
+                      <li>UI/UX Desgin<span class="card_icon">🌃</span></li>
+                      <li>Rapid Prototyping<span class="card_icon">🧑🏻‍💻</span></li>
+                      <li>App Building<span class="card_icon">⏳</span></li>
+                      <li>Cloud Deployment<span class="card_icon">🌐</span></li>
                     </ul>
-                    <form action="https://cal.com/nizamsyed/ai-development" method="get" target="_blank">
-                        <button class="glow-on-hover" type="submit" >BOOK NOW</button>
-                    </form>
+                    <a href="https://cal.com/nizamsyed/ai-development" class="card__cta cta" target="_blank">BOOK NOW</a>
+                  </div>
                 </div>
-            </div>
             <div class="overlay cards__inner"></div>
         </div>
         </section>
+
+
         <!--===== Testimonials / Endorsement =====-->
         <section class="testimonials section">
             <h2 data-heading="Testimonials from my colleagues" class="section_title" >Endorsement</h2>
@@ -966,7 +956,7 @@
                         </div><br>
 
                         <!-- Submit button -->
-                        <button type="submit" class="button"><i class="uil uil-navigator button_icon"></i>
+                        <button type="submit" class="send_message_button"><i class="uil uil-navigator button_icon"></i>
                             Send Message
                         </button>
                     </form>
@@ -1012,7 +1002,7 @@
                 </div>
                 <p class="footer-heart">
                     Made with <g-emoji class="g-emoji" alias="heart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">
-                  <img class="emoji" alt="heart" height="20" width="20" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png"></g-emoji> by <a href="https://armin.id">Nizam</a>
+                  <img class="emoji" alt="heart" height="20" width="20" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png"></g-emoji> in Germany
                   </p>
                 <p class="footer_copy">&copy Nizam Syed | All Rights Reserved</p>
             </div>
