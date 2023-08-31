@@ -1543,34 +1543,57 @@ textarea.input {
 }
 
 
-/*=============== SCROLL UP ===============*/
-::-webkit-scrollbar {
-    width: .60rem;
-    background-color: var(--scroll-bar-color);
-    border-radius: 2rem;
+/* BACK TO TOP */
+
+html {
+	scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar-thumb {
-    background-color: var(--scroll-thumb-color);
-    border-radius: 2rem;
+.back-to-top {
+    height: 2.5rem;
+    width: 2.5rem;
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	/* background-color: var(--skin-color); */
+	border-radius: 50rem;
+	padding: 0.5rem;
+	text-decoration: none;
+	transition: 0.2s ease-out;
 }
 
-/* Show Scroll Up*/
+.back-to-top span {
+	/* color: #fff; */
+	font-size: 3rem;
+	transition: 0.2s ease-out;
+}
 
+.back-to-top:hover {
+    box-shadow: 0 0 10px 5px var(--skin-color);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.back-to-top:hover span {
+	transform: translateY(-4px);
+}
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
-    width: .60rem;
+    /* width: .60rem; */
+    width: 0.5rem;
     background-color: var(--scroll-bar-color);
     border-radius: .5rem;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--scroll-thumb-color);
+    background-color: var(--skin-color);
     border-radius: .5rem;
 }
 
 /*========== BREAKPOINTS ==========*/
+
 /* For Large Devices */
 @media screen and (max-width: 1408px) {
     .container {
@@ -1693,7 +1716,9 @@ textarea.input {
     }
 
     .services_container {
-        grid-template-columns: repeat(3, 220px);
+        /* grid-template-columns: repeat(3, 220px); */
+        grid-template-columns: auto;
+
     }
 
     .testimonial_card {
@@ -1866,13 +1891,11 @@ textarea.input {
         margin-right: var(--mb-1);
     }
 
+
     .home_img {
         width: 200px;
     }
 
-    .home_title {
-        font-size: var(--h1-font-size);
-    }
 
     .home_subtitle {
         font-size: var(--normal-font-size);
@@ -1902,7 +1925,9 @@ textarea.input {
         column-gap: .25rem;
     }
     .services_container {
-        grid-template-columns: max-content;
+        /* grid-template-columns: max-content; */
+        grid-template-columns: auto;
+
     }
     .services_content {
         padding-right: 3.5rem;

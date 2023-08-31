@@ -24,7 +24,7 @@ if(navClose) {
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Data Scientist", "ML Engineer", "AI Advisor", "AI Consultant", "Data Strategist", "AI Product Manager"];
+const textArray = ["Data Scientist", "ML Engineer", "AI Advisor", "AI Consultant", "Data Strategist"];
 const typingDelay = 50;
 const erasingDelay = 50;
 const newTextDelay = 1000; // Delay between current and next text
