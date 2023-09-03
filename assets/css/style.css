@@ -804,8 +804,6 @@ a {
     border-radius: .5rem;
 }
 
-
-
 .portfolio_item-details {
     display: none;
 }
@@ -813,6 +811,8 @@ a {
 .work_img {
     border-radius: .5rem;
     margin-bottom: var(--mb-1);
+    height: 220px;
+    width: 300px;
 }
 .work_title {
     font-size: var(--normal-font-size);
@@ -896,6 +896,7 @@ a {
 .portfolio_popup-subtitle {
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-0-25);
+    color: var(--skin-color);
 
 }
 .details_title {
@@ -907,6 +908,7 @@ a {
 .details_description {
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-2);
+    text-align: auto;
 }
 .details_info li {
     margin-bottom: var(--mb-0-75);

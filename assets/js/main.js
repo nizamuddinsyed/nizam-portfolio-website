@@ -89,7 +89,7 @@ const tabs = document.querySelectorAll('[data-target]'),
 
 
 
-/*=============== MIXITUP FILTER PORTFOLIO ===============*/
+/*=============== MIXITUP FILTER PORTFOLIO work ===============*/
 
 let mixerPortfolio = mixitup('.work_container', {
     selectors: {
@@ -119,19 +119,23 @@ document.addEventListener("click", (e) => {
         portfolioItemDetails(e.target.parentElement);
     }
 
-})
+});
 
+// Function to toggle popup open/close
 function togglePortfolioPopup() {
     document.querySelector(".portfolio_popup").classList.toggle("open");
+    
 }
 
-document.querySelector(".portfolio_popup-close").addEventListener("click", togglePortfolioPopup)
+document.querySelector(".portfolio_popup-close").addEventListener("click", togglePortfolioPopup);
 
 function portfolioItemDetails(portfolioItem) {
-    document.querySelector(".pp_thumbnail img").scr = portfolioItem.querySelector(".work_img").scr;
+    document.querySelector(".pp_thumbnail img").src = portfolioItem.querySelector(".work_img").src;
     document.querySelector(".portfolio_popup-subtitle span").innerHTML = portfolioItem.querySelector(".work_title").innerHTML;   
-    /*document.querySelector(".portfolio_popup-body span").innerHTML = portfolioItem.querySelector(".portfolio_item-details").innerHTML; */
+    document.querySelector(".portfolio_popup-body").innerHTML = portfolioItem.querySelector(".portfolio_item-details").innerHTML;
 }
+
+
 /*=============== SERVICES MODAL ===============*/
 
 const modalViews = document.querySelectorAll('.services_modal'),
