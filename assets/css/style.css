@@ -794,7 +794,6 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 3s00px;
 
   }
   
@@ -807,7 +806,7 @@ a {
   }
   
   .tag-list {
-    width: 50rem;
+    width: 65rem; /* to adjust width*/
     max-width: 90vw;
     display: flex;
     flex-shrink: 0;
@@ -816,12 +815,20 @@ a {
     position: relative;
     padding: 1.5rem 0;
     overflow: hidden;
+    /* background: linear-gradient(
+        to left,
+        var(--body-color) 0%,
+        var(--box-color) 10%,
+        var(--box-color)90%,
+        var(--body-color) 100%
+      ); */
+
   }
   
   .loop-slider {
     .inner {
       display: flex;
-      width: fit-content;
+      /* width: fit-content; */
       animation-name: loop;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
@@ -835,19 +842,12 @@ a {
     align-items: center;
     gap: 0 0.2rem;
     color: #e2e8f0;
-    /* color: var(--skin-color); */
-    font-size: 1rem;
+    font-size: var(--small-font-size);
     background-color: var(--box-color);
-    /* background-color: var(--skin-color); */
     border-radius: 0.4rem;
-    padding: 0.7rem 1rem;
-    margin-right: 1rem;
-    box-shadow: 0 0 1px 0.6px var(--skin-color);
-    
-    span {
-      font-size: 1.2rem;
-      /* color: #64748b; */
-    }
+    padding: 0.7rem 2rem;
+    margin-right: 1.5rem;
+    box-shadow: 0 0 8px 0.6px var(--skin-color);
   }
   
   @keyframes loop {
